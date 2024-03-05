@@ -1,0 +1,35 @@
+.custom-dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    overflow: hidden;
+    overflow-x: hidden;
+    width: 100%;
+  }
+  
+  .option {
+    padding: 8px;
+    text-decoration: none;
+    color: #333;
+    transition: transform 1.5s ease-in-out;
+    border-radius: 10px;
+
+  }
+  
+  .option:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .custom-dropdown.show-options .option {
+    transform: translateY(0);
+  }
+  
+  .custom-dropdown.hide-options .option {
+    transform: translateY(100%);
+  }
+  
